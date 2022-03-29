@@ -1,5 +1,3 @@
-from itertools import count
-from textwrap import indent
 import urllib.request
 import json
 url = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson'
