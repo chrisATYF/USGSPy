@@ -1,11 +1,10 @@
 import urllib.request
 import json
 url = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson'
-req = urllib.request.Request(url)
+url_request = urllib.request.Request(url)
 
-r = urllib.request.urlopen(req).read()
-cont = json.loads(r.decode('utf-8'))
-record = 0
+url_fetch = urllib.request.urlopen(url_request).read()
+raw_data = json.loads(url_fetch.decode('utf-8'))
 earthquakes = []
 
 class Earthquake:
@@ -17,12 +16,13 @@ class Earthquake:
         self.mag = mag
         self.place = place
 
-for item in cont['features']:
-    quake = Earthquake(mag=item['properties']['mag'], place=item['properties']['place'])
+records_amount = 0
+for features in raw_data['features']:
+    quake = Earthquake(mag=features['properties']['mag'], place=features['properties']['place'])
     earthquakes.append({'mag':quake.mag, 'place':quake.place})
-    record+=1
+    records_amount+=1
 
 with open('earthquakeData.json', 'w+') as outfile:
     json.dump(earthquakes, outfile, indent=4)
 
-print('Records found: ', record)
+print('Records found: ', records_amount)

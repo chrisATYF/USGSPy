@@ -1,6 +1,22 @@
 [
     {
-        "mag": 1.23,
+        "mag": 0.45,
+        "place": "4km NNW of The Geysers, CA"
+    },
+    {
+        "mag": 2.35,
+        "place": "9 km E of P\u0101hala, Hawaii"
+    },
+    {
+        "mag": 1.04,
+        "place": "8km SSE of Idyllwild, CA"
+    },
+    {
+        "mag": 2.11,
+        "place": "3 km S of Indios, Puerto Rico"
+    },
+    {
+        "mag": 1.21,
         "place": "13km SE of Bodfish, CA"
     },
     {
@@ -44,8 +60,8 @@
         "place": "7 km SE of La Parguera, Puerto Rico"
     },
     {
-        "mag": 1.63,
-        "place": "15km SSW of Searles Valley, CA"
+        "mag": 1.61,
+        "place": "14km SSW of Searles Valley, CA"
     },
     {
         "mag": 1.5,
@@ -68,8 +84,8 @@
         "place": "17 km NE of West Yellowstone, Montana"
     },
     {
-        "mag": 0.84,
-        "place": "10km S of Idyllwild, CA"
+        "mag": 0.75,
+        "place": "10km N of Anza, CA"
     },
     {
         "mag": 2.9,
@@ -564,6 +580,10 @@
         "place": "3km W of Cobb, CA"
     },
     {
+        "mag": 0.59,
+        "place": "62 km N of Karluk, Alaska"
+    },
+    {
         "mag": 1.8,
         "place": "5km NW of The Geysers, CA"
     },
@@ -910,13 +930,5 @@
     {
         "mag": 0.37,
         "place": "10km WNW of The Geysers, CA"
-    },
-    {
-        "mag": -0.53,
-        "place": "61 km ENE of Pedro Bay, Alaska"
-    },
-    {
-        "mag": 4.6,
-        "place": "south of the Fiji Islands"
     }
 ]
