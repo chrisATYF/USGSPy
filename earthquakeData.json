@@ -384,6 +384,10 @@
         "place": "2 km N of Orocovis, Puerto Rico"
     },
     {
+        "mag": 0.65,
+        "place": "95 km WNW of Aleneva, Alaska"
+    },
+    {
         "mag": 2.1,
         "place": "14km SSW of Searles Valley, CA"
     },
@@ -906,29 +910,5 @@
     {
         "mag": 1.14,
         "place": "8km WNW of Cobb, CA"
-    },
-    {
-        "mag": 0.83,
-        "place": "23km NNW of Borrego Springs, CA"
-    },
-    {
-        "mag": 0.15,
-        "place": "6km WSW of Anza, CA"
-    },
-    {
-        "mag": 0.85,
-        "place": "2km NW of The Geysers, CA"
-    },
-    {
-        "mag": 2.89,
-        "place": "Puerto Rico region"
-    },
-    {
-        "mag": 1.84000003,
-        "place": "10 km ENE of P\u0101hala, Hawaii"
-    },
-    {
-        "mag": 0.37,
-        "place": "10km WNW of The Geysers, CA"
     }
 ]

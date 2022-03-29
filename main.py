@@ -8,19 +8,9 @@ url_fetch = urllib.request.urlopen(url_request).read()
 raw_data = json.loads(url_fetch.decode('utf-8'))
 earthquakes = []
 
-class Earthquake:
-
-    mag = ''
-    place = ''
-
-    def __init__(self, mag, place):
-        self.mag = mag
-        self.place = place
-
 records_amount = 0
 for features in raw_data['features']:
-    quake = Earthquake(mag=features['properties']['mag'], place=features['properties']['place'])
-    earthquakes.append({'mag':quake.mag, 'place':quake.place})
+    earthquakes.append({'mag':features['properties']['mag'], 'place':features['properties']['place']})
     records_amount+=1
 
 with open('earthquakeData.json', 'w+') as outfile:
